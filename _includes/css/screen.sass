@@ -1,0 +1,173 @@
+$blue: #0098D4
+$orange: #E28000
+$charcoal: #333333
+$grey: #cccccc
+
+=hide
+	position: fixed
+	top: -9999px
+
+=block
+	padding: 16px
+	margin: 32px auto
+	@media (min-width: 480px)
+		margin: 64px auto 
+
+*
+	margin: 0 
+	padding: 0
+	box-sizing: border-box
+
+body  	
+	background-color: #FFFFFF
+
+a 
+	font-family: Helvetica, Verdana, Arial, sans-serif
+	font-weight: bold
+	border-bottom: 1px solid inherit
+	text-decoration: none
+	color: $blue
+
+a:hover, 
+a:focus 
+	color: $orange
+	border-bottom: 1px solid inherit
+
+h2 
+	font-family: Helvetica, Verdana, Arial, sans-serif
+	font-weight: 300
+	font-size: 24px
+	line-height: 1.25
+	text-align: center
+	color: $charcoal
+	max-width: 768px
+	margin: 32px auto
+	@media (min-width: 480px)
+		font-size: 28px
+
+
+h3 
+	font-family: Helvetica, Verdana, Arial, sans-serif
+	font-weight: 500
+	font-size: 18px
+	line-height: 1.25
+	text-align: center
+	color: $charcoal
+	max-width: 768px
+	margin: 32px auto
+
+p 
+	font-family: Helvetica, Verdana, Arial, sans-serif
+	font-weight: 300
+	line-height: 1.5
+	font-size: 16px
+	text-align: center
+	color: $charcoal
+	max-width: 768px
+	margin: 32px auto	
+	@media (min-width: 480px) 
+		font-size: 18px
+
+
+.header
+	margin: 0
+	padding: 64px
+	background-image: url(assets/texture.jpg)
+	background-size: cover
+	background-position: center
+	&_logo
+		display: block
+		margin: 0 auto
+	&_title
+		+hide
+
+
+.banner
+	margin-bottom: 64px
+	padding: 16px
+	background-color: lighten($blue, 50%)
+	&_text
+		color: $blue
+		font-size: 18px	
+		@media (min-width: 480px)
+			font-size: 24px
+	&_est
+		color: $blue
+
+
+.about
+	+block
+
+
+.gallery
+	+block
+	&_wrapper
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+	&_item
+		width: 100%
+		padding: 8px
+		@media (min-width: 640px)
+			width: 50%
+	&_image
+		width: 100%
+		height: auto
+
+
+.services
+	+block
+
+	&_list
+		font-family: Helvetica, Verdana, Arial, sans-serif
+		font-weight: 300
+		line-height: 1.5
+		font-size: 16px
+		text-align: center
+		color: $charcoal
+		max-width: 480px
+		margin: 32px auto
+		@media (min-width: 480px) 
+			font-size: 18px
+
+		li
+			display: block
+			border-top: 1px solid $grey
+			border-bottom: 1px solid $grey
+			padding: 16px
+			margin-top: -1px
+
+
+	// table 
+	// 	border-collapse: collapse
+	// 	max-width: 100%
+	// 	border: 0 none
+	// 	margin: auto
+
+	// 	overflow-wrap: break-word
+	// 	word-wrap: break-word
+	// 	-ms-word-break: break-all
+	// 	word-break: break-word
+	// 	-ms-hyphens: auto
+	// 	-moz-hyphens: auto
+	// 	-webkit-hyphens: auto
+	// 	hyphens: auto
+
+	// td, th 
+	// 	border: 1px solid #ccc
+	// 	padding: 8px
+	// 	vertical-align: top
+	// 	@media (min-width: 480px)
+	// 		padding: 16px
+
+	// th 
+	// 	text-align: right
+
+
+	// td 
+	// 	text-align: left
+
+
+.contact
+	+block
+

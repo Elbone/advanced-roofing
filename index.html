@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+<div class="banner" id="banner">
+	<p class="banner_text">Advanced Roofing provides roofing and cladding services for domestic and industrial construction.</p>
+	<p class="banner_text">We distinguish ourselves in the industry by our commitment to delivering a high standard of work and our honesty and integrity.</p>
+	<p class="banner_est">Established 2007</p>
+</div>
+
+<div class="about" id="about">
+	<h2>About our Director</h2>
+	<p>With more than 50 years in the field, company director David Hargreaves is an established figure in the roofing and construction industries in South Australia.</p>
+</div>
+
+<div class="gallery" id="gallery">
+	<h2>Gallery</h2>
+	<div class="gallery_wrapper">
+		{% for item in site.gallery %}
+			<div class="gallery_item">
+				<img class="gallery_image" src="{{ item.image }}">
+				<h3>{{ item.title }}</h3>
+				{{ item.content }}
+			</div>
+	    {% endfor %}
+	</div>
+</div>
+
+<div class="services" id="services">
+	<h2>Services</h2>
+	<ul class="services_list">
+		<li><b>Domestic</b> and <b>Commercial</b></li>
+		<li>Roofing</li>
+		<li>Cladding</li>
+		<li>Guttering, fascias, and downpipes</li>
+		<li>Curved or complex roofing</li>
+		<li>Polycarbonate/Dampalone roofing</li>
+		<li>New, heritage, or renovations</li>
+	</ul>
+</div>

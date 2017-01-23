@@ -1,0 +1,21 @@
+<div id="contact" class="contact">
+	<h2>Contact us</h2>
+	<p><a href="tel:+61882880100">08 8288 0100</a></p>
+	<script type="text/javascript">
+		var EA1 = "{{ site.email  | replace: '@','#' | replace: '.', '+' }}";
+		var EA2 = EA1.replace('#', '@').replace(/\+/g, '.');
+		document.write('<p><a href="mailto:' + EA2 + '">' + EA2 + '</a></p>');
+	</script>
+	<p>
+		Postal Address:<br>
+		Advanced Roofing Contractors<br>
+		PO Box 3095<br>
+		Port Adelaide <br>
+		South Australia 5015
+	</p>
+	<p>
+		Director: David Hargreaves<br>
+		ABN: 40125989424<br>
+		BLD: 205064
+	</p>
+</div>
