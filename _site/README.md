@@ -1,11 +1,3 @@
-# Source code for nielsoeltjen.com
+# Source code for advancedroofingcontractors.com.au
 
 Not much to see here.
-
-Uses:
-- Jekyll
-- SVG lols
-
-Todo:
-- Fix Favicon
-- Fix Analytics loading
