@@ -14,6 +14,7 @@ $grey: #cccccc
 	@media (min-width: 480px)
 		margin: 64px auto 
 
+
 *
 	margin: 0 
 	padding: 0
@@ -28,11 +29,10 @@ a
 	border-bottom: 1px solid inherit
 	text-decoration: none
 	color: $blue
-
-a:hover, 
-a:focus 
-	color: $orange
-	border-bottom: 1px solid inherit
+	&:hover, 
+	&:focus 
+		color: $orange
+		border-bottom: 1px solid inherit
 
 h2 
 	font-family: Helvetica, Verdana, Arial, sans-serif
@@ -41,7 +41,7 @@ h2
 	line-height: 1.25
 	text-align: center
 	color: $charcoal
-	max-width: 768px
+	max-width: 640px
 	margin: 32px auto
 	@media (min-width: 480px)
 		font-size: 28px
@@ -54,7 +54,7 @@ h3
 	line-height: 1.25
 	text-align: center
 	color: $charcoal
-	max-width: 768px
+	max-width: 640px
 	margin: 32px auto
 
 p 
@@ -64,19 +64,22 @@ p
 	font-size: 16px
 	text-align: center
 	color: $charcoal
-	max-width: 768px
-	margin: 32px auto	
+	max-width: 640px
+	margin: 16px auto	
 	@media (min-width: 480px) 
 		font-size: 18px
+		margin: 32px auto	
 
 
 .header
 	margin: 0
 	padding: 64px
-	background-image: url(assets/texture.jpg)
+	background-image: url(assets/texture-small.jpg)
 	background-size: cover
 	background-position: center
 	background-color: $light-blue
+	@media (min-width: 720px) 
+		background-image: url(assets/texture.jpg)
 	&_logo
 		display: block
 		margin: 0 auto
